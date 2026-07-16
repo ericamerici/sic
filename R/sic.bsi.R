@@ -2,7 +2,7 @@
 # Bare Soil Index, useful when soil must be detected in relationship with vegetation
 # How to use (an example)
 # park2025 <- rast("p25.tif")
-# bsi2025 <- sic.ndmi(park2025, 5, 4)
+# bsi2025 <- sic.ndmi(park2025, 5, 3, 4, 1)
 # plot(bsi2025)
 
 
