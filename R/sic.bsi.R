@@ -12,7 +12,7 @@ sic.bsi <- function(x, swir, red, nir, blue) {
     stop("Input image should be a SpatRaster object.")
   }
 
-  if (!is.numeric(swir) || !is.numeric(red) || !is.numeric(nir) || !is.numeric(blue) {
+  if (!is.numeric(swir) || !is.numeric(red) || !is.numeric(nir) || !is.numeric(blue)) {
     stop("SWIR, RED, NIR and BLUE must be numeric.")
   }
 
