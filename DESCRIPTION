@@ -1,0 +1,10 @@
+Package: sic
+Type: Package
+Title: Drought and Desertification Indexes Use
+Version: 0.1.0
+Authors@R: person("Erica", "Merici", email = "ericamerici@gmail.com", role = c("aut", "cre"))
+Description: Simplify the use of indexes such as DVI, NDVI, NDMI, BSI in multitemporal analysis.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.0.0)
