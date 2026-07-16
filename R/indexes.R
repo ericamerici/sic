@@ -1,16 +1,15 @@
-sic.ndmi <- function(x, SWIR, NIR) {
-  
-  if(!inherits(x, "SpatRaster")) {
+sic.ndmi <- function(x, swir, nir) {
+
+  if (!inherits(x, "SpatRaster")) {
     stop("Input image should be a SpatRaster object.")
   }
-  
-  if(!inherits(nir, "numeric") && !inherits(red, "numeric")) {
-    stop("NIR and red layers should be indicated with a number")
-  } 
 
-  ndmi = (x[[nir]] - x[[swir1]]) /
-    (x[[nir]] + x[[swir1]])
+  if (!is.numeric(swir) || !is.numeric(nir)) {
+    stop("SWIR and NIR must be numeric.")
+  }
 
+  ndmi <- (x[[nir]] - x[[swir]]) /
+          (x[[nir]] + x[[swir]])
+
+  return(ndmi)
 }
-
-return (dvi)
