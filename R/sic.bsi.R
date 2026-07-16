@@ -16,8 +16,8 @@ sic.bsi <- function(x, swir, red, nir, blue) {
     stop("SWIR, RED, NIR and BLUE must be numeric.")
   }
 
-  bsi <- ((x[[5]] + x[[3]]) - (x[[4]] + x[[1]])) /
-         ((x[[5]] + x[[3]]) + (x[[4]] + x[[1]]))
+  bsi <- ((x[[swir]] + x[[red]]) - (x[[nir]] + x[[blue]])) /
+         ((x[[swir]] + x[[red]]) + (x[[nir]] + x[[blue]]))
 
   return(bsi)
 }
